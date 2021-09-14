@@ -370,6 +370,21 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
+@keyframes appearance {
+  from {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .slide {
   display: none;
 }
@@ -379,6 +394,7 @@ header {
   -webkit-transition: 0.7s;
   -o-transition: 0.7s;
   transition: 0.7s;
+  animation: appearance 1s;
 }
 
 .slider-Mobile {
